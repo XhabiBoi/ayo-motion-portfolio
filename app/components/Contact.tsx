@@ -90,7 +90,60 @@ export function Contact() {
           </button>
         </motion.div>
 
-        {/* Socials — placeholder removed; add real handles later */}
+        {/* Hire on platforms */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          className="mt-16"
+        >
+          <div className="text-xs font-mono tracking-[0.3em] uppercase text-white/40 mb-5">
+            Or hire me on
+          </div>
+          <div className="flex flex-wrap justify-center gap-3">
+            {/* TODO: swap ?#YOUR_USERNAME for the real handle once gigs are live */}
+            <a
+              href="https://www.fiverr.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-5 py-3 rounded-xl border border-[#1DBF73]/40 bg-[#1DBF73]/[0.06] hover:bg-[#1DBF73]/[0.12] hover:border-[#1DBF73] transition-colors group"
+              style={{ boxShadow: "0 0 16px rgba(29,191,115,0.15)" }}
+            >
+              <span className="text-[#1DBF73] font-black text-lg tracking-tight">
+                fiverr<span className="text-[#1DBF73]">.</span>
+              </span>
+              <span className="text-sm text-white/70 group-hover:text-white">
+                View gigs →
+              </span>
+            </a>
+            <a
+              href="https://www.upwork.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-5 py-3 rounded-xl border border-[#14A800]/40 bg-[#14A800]/[0.06] hover:bg-[#14A800]/[0.12] hover:border-[#14A800] transition-colors group"
+              style={{ boxShadow: "0 0 16px rgba(20,168,0,0.15)" }}
+            >
+              <span className="text-[#14A800] font-black text-lg tracking-tight">
+                Upwork
+              </span>
+              <span className="text-sm text-white/70 group-hover:text-white">
+                Hire on Upwork →
+              </span>
+            </a>
+            <a
+              href="https://github.com/XhabiBoi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-5 py-3 rounded-xl border border-white/15 bg-white/[0.02] hover:bg-white/[0.06] hover:border-white/40 transition-colors group"
+            >
+              <span className="text-white font-bold tracking-tight">GitHub</span>
+              <span className="text-sm text-white/70 group-hover:text-white">
+                @XhabiBoi →
+              </span>
+            </a>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
